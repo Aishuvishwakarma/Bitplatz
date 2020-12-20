@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(210, 231, 200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+nav{
+    width:100%;
+    height: 80px;
+}
+.nav{
+    width:90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 100px;
+}
+#logo h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+#link{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#link a{
+    text-decoration: none;
+    color: #333232;
+    font-size: 13px;
+    font-weight: 500;
+}
+#link a div{
+    width: 5px;
+    height:5px;
+    background-color: #4b4b4bec;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+#link a:nth-child(1) div{
+    background-color:  rgb(236, 209, 122);
+}
+#add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add i{
+    font-size: 30px;
+    color: #575454;
+}
+.bottom{
+    width:100%;
+    height: 70px;
+    background-color: rgb(236, 209, 122);
+}
+.bottom #bottom{
+    width:90%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom #bottom .bottmLeft{
+    width: 230px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom #bottom .bottmLeft p{
+    font-size: 13px;
+    color: #333232;
+    font-weight: 500;
+}
+
+.bottom #bottom .bottmRight{
+    width: 150px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+.bottom #bottom .bottmRight p{
+    color: #fff;
+}
+.bottom #bottom .bottmRight p:nth-child(1){
+    color: rgba(255, 255, 255, 0.87);
+}
+.bottom #bottom .bottmLeft p:nth-child(1){
+    color: #fff;
+}
+.container{
+    width: 90%;
+    height: calc(100% - 80px);
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .text{
+    position: absolute;
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .text h2{
+    position: absolute;
+    top: -24%;
+    font-size: 45em;
+    z-index: 1;
+    color: #f3f3f3;
+    text-shadow: 8px 3px 8px #0000001f;
+}
+.container .text .img{
+    width:800px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .text .img img{
+    width:600px;
+    height: 600px;
+}
+.content{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* background-color: #fff; */
+    top: 55%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    z-index: 33;
+}
+.content h4{
+font-size: 50px;
+font-weight: 300;
+}
+.content p{
+    font-size: 11px;
+    font-weight: 600;
+    margin: 25px 0px;
+    color: #333232;
+    letter-spacing: .5px;
+}
+.content .more{
+    width: 150px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.content .more p{
+    font-weight: 600;
+}
+.content .more i{
+    font-size: 18px;
+}
+.content .pagination{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding:0 10px ;
+}
+.content .pagination i{
+    font-size: 30px;
+    color: #333232;
+}
+.watch{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: 55%;
+    right: 22%;
+    transform: translate(-50%,-50%);
+    z-index: 33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.watch .play{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.watch .play i{
+    font-size: 18px;
+   color: #fff;
+}
+.watch p{
+    font-weight: 500;
+}
+.contact{
+    position: absolute;
+    height: 20px;
+    top: 55%;
+    left:5%;
+    transform: translate(-50%,-95%);
+    z-index: 33;
+}
+.contact p{
+    font-weight: 300;
+    letter-spacing: .5px;
+    transform: rotate(-90deg);
+}
